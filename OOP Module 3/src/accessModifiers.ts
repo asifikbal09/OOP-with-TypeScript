@@ -14,19 +14,18 @@
       this._balance = this._balance + amount;
     };
     getBalance = () => {
-      console.log(this._balance);
+      return this._balance;
     };
   }
 
-//   class StudentAccount extends BankAccount{
-//     test(){
-//         this.
-//     }
-//   }
+  //   class StudentAccount extends BankAccount{
+  //     test(){
+  //         this.
+  //     }
+  //   }
 
   const poorManAccount = new BankAccount(111, "Mr Poorman", 20);
-  poorManAccount.getBalance()
-  poorManAccount.addDeposit(20)
-  poorManAccount.getBalance()
-
+  poorManAccount.addDeposit(20);
+  const myBalance = poorManAccount.getBalance();
+  console.log(myBalance);
 }
